@@ -1,5 +1,5 @@
 %define upstream_name    Dist-Zilla-Plugin-CompileTests
-%define upstream_version 0.1.2
+%define upstream_version 0.1.3
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -22,7 +22,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 This is an extension of the Dist::Zilla::Plugin::InlineFiles manpage,
 providing the following files:
 
-* * t/00-compile.t - a standard test to check syntax of bundled modules
+* t/00-compile.t - a standard test to check syntax of bundled modules
 
 This test will find all modules and scripts in your dist, and try to
 compile them one by one. This means it's a bit slower than loading them all
@@ -51,5 +51,4 @@ rm -rf %buildroot
 %doc Changes LICENSE README
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
 
