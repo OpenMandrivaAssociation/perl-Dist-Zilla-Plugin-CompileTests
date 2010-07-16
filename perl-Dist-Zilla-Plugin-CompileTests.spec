@@ -1,5 +1,5 @@
 %define upstream_name    Dist-Zilla-Plugin-CompileTests
-%define upstream_version 1.100740
+%define upstream_version 1.101800
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -48,6 +48,6 @@ rm -rf %buildroot
 
 %files
 %defattr(-,root,root)
-%doc Changes LICENSE README
+%doc Changes LICENSE README META.yml
 %{_mandir}/man3/*
 %perl_vendorlib/*
