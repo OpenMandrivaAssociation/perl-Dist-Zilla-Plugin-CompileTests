@@ -14,7 +14,7 @@ Source0:    http://www.cpan.org/modules/by-module/Dist/%{upstream_name}-%{upstre
 BuildRequires: perl(Dist::Zilla::Plugin::InlineFiles)
 BuildRequires: perl(File::Find::Rule)
 BuildRequires: perl(Moose)
-BuildRequires: perl(Test::More)
+BuildRequires: perl(Test::More) >= 0.940.0
 
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
