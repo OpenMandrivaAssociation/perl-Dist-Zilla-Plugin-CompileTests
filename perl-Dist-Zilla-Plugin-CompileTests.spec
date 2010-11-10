@@ -1,5 +1,5 @@
 %define upstream_name    Dist-Zilla-Plugin-CompileTests
-%define upstream_version 1.101800
+%define upstream_version 1.103030
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
