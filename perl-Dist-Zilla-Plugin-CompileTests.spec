@@ -1,15 +1,13 @@
 %define upstream_name    Dist-Zilla-Plugin-CompileTests
-%define upstream_version 1.110930
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	5
+Version:	1.110930
+Release:	6
 
 Summary:	Common tests to check syntax of your modules
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Dist-Zilla-Plugin-CompileTests
-Source0:	http://www.cpan.org/modules/by-module/Dist/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Dist/%{upstream_name}-%{version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Dist::Zilla::Plugin::InlineFiles)
@@ -31,7 +29,7 @@ compile them one by one. This means it's a bit slower than loading them all
 at once, but it will catch more errors.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Build.PL installdirs=vendor
